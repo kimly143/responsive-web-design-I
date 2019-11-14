@@ -171,6 +171,17 @@ body {
 	padding: 1% 0 1% 0;
 }
 
+.anchors{
+    width:100%;
+    display: flex;
+    align-items: stretch;
+    align-items: center;	
+}
+.anchors a{
+    flex-grow:1;
+    text-align: center;
+}
+
 button {
 	/* border: 2px solid gray; */
 	background-color: rgb(197, 196, 196);
@@ -323,3 +334,129 @@ li {
 	9px 9px 0 rgb(167, 227, 222),
 	10px 10px 0 rgb(111, 182, 63);
 }
+
+/* tablet view */
+@media(max-width:768px)
+{
+    body{
+        font-size: 12px;
+    }
+    .navigation{
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+
+    }
+    .anchors{
+        width:100%;
+        display: flex;
+        align-items: stretch;
+        align-items: center;
+        margin-top: 5%;	
+    }
+    .anchors a{
+        flex-grow:1;
+        text-align: center;
+    }
+    .roundcode{
+        display:none;
+    }
+
+    button{
+        background-color:white;
+        font-size:12px;
+    }
+    .header{
+        border-bottom: none;
+    }
+    .firstContent{
+        margin-top:5%;
+        border-top: 2px solid black;
+    }
+    .content2{
+        border-bottom: 2px solid black;
+        margin-bottom: 5%;
+    }
+}
+
+@media(max-width:400px)
+{
+    body
+    {
+        font-size: 10px;
+        width: 100%;
+        margin:0;
+    }
+    .navigation{
+        width: 100%;
+        background-color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        padding:0;
+    }
+    .anchors{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        align-items: center;
+        margin-top: 5%;	
+        border-bottom: 1px solid gray;
+
+    }
+    .anchors a{
+        flex-grow:1;
+        text-align: center;
+        color:gray;
+        width:100%;
+        border-top: 1px solid gray;
+        padding: 4% 0;
+    }
+    .roundcode{
+        display:none;
+    }
+    .logo{
+        padding: 4% 0 0 0;
+    }
+
+    button{
+        background-color:white;
+        font-size:12px;
+    }
+    .header{
+        border-bottom: none;
+    }
+    .firstContent{
+        margin-top:5%;
+        border-top: 2px solid black;
+        display: flex;
+        flex-direction: column;
+    }
+    .content2{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid black;
+        margin-bottom: 5%;
+    }
+    .header h1{
+        font-size:30px;
+    }
+    .contentHalf{
+        flex-grow:1;
+        padding:5%;
+    }
+    .onethird{
+        flex-grow:1;
+        padding: 5%;
+    }
+    .contact{
+        padding: 5%;
+    }
+}
+   
+
